@@ -53,12 +53,12 @@ def calculate_cart_total(cart):
 
     for product in cart.products:
         final_price = calculate_final_price(product.price, product.category)
-        total += final_price
+        total =total+ final_price
 
     return total
 
 
-# Predefined Products
+# Predefined Products we have given
 p1 = Product(101, "Laptop", 50000, "Electronics")
 p2 = Product(102, "Mobile", 20000, "Electronics")
 p3 = Product(103, "Shirt", 1500, "Clothing")
